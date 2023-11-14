@@ -5,7 +5,7 @@ from math import radians, sin, cos
 
 
 neo4j_connection = Neo4jConnection(
-    uri="bolt://172.19.0.2:7687",
+    uri="bolt://172.20.0.2:7687",
     user="neo4j",
     password="neo4j123",
     

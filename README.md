@@ -27,6 +27,10 @@ fece37b7f6af   scraper_full_stack_devcontainer-devcontainer   "/bin/sh -c 'echo 
 
 ```
 
+### Copy file to docker
+run this command to copy file to docker
+` docker cp outlets_with_coordinates.csv <container_id>:/var/lib/neo4j/import/ `
+
 ### Database Configuration
 
 After the Docker container is up and running, obtain the Docker IP for the database:
@@ -36,6 +40,12 @@ docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' <co
 ```
 
 Paste the obtained Docker IP into the uri variable in server.py.
+Paste the obtained Docker IP into the uri variable in ingest_data.py.
+
+### Ingest Data in database
+run this command
+
+`python ingest_data.py`
 
 ### Set Up Flask
 
