@@ -1,0 +1,10 @@
+neo4j
+neo4j-driver
+geopy
+scrapy
+pydantic-settings
+pandas
+flask
+py2neo
+shapely
+pyproj
